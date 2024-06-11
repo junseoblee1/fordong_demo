@@ -1,0 +1,154 @@
+.container {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure the container can be a reference for positioning */
+  min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #000; /* Change text color to black */
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.searchIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.postList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.post {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.postLink {
+  text-decoration: none;
+  color: #000; /* Change text color to black */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.postContent {
+  flex-grow: 1;
+}
+
+.postTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #000; /* Change text color to black */
+}
+
+.postMeta {
+  font-size: 0.875rem;
+  color: #666;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.metaText {
+  display: block;
+  color: #666; /* Ensure meta text color is not white */
+}
+
+.postImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.comments {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: right;
+}
+
+.commentsText {
+  display: block;
+  color: #666; /* Ensure comments text color is not white */
+}
+
+.floatingButton {
+  position: fixed;
+  bottom: 4rem; /* Ensure it is above the navigation bar */
+  right: calc(50% - 300px); /* Adjust this to match the center of your container */
+  background-color: #6200ea;
+  color: white;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure the button is above other elements */
+  transition: transform 0.3s;
+}
+
+.floatingButton:hover {
+  transform: scale(1.1);
+}
+
+.createIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.bottomNav {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 56px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure the nav bar is above other elements */
+}
+
+.navItem {
+  width: 24px;
+  height: 24px;
+}
